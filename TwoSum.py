@@ -41,6 +41,28 @@ class Solution:
         return False
 
 
+approach 2:
+using Hasmap(Dictionary) , calculating difference and using i!=j such that we dont add one element twice
+Time complexity: O(n)
+space complexity: O(n)
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        x = {}
+        for i in range(len(nums)):
+            x[nums[i]] = i
+
+        for i in range(len(nums)):
+            difference = target - nums[i]
+            if difference in x:
+                j = x[difference]
+                if i != j:
+                    if i < j:
+                        return [i, j]
+                    else:
+                        return [j, i]
+
+        return False
 
 
 
