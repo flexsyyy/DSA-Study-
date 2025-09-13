@@ -25,7 +25,7 @@ Constraints:
 
 approach 1:
 Brute Force method with two loops:
-Time complexity:
+Time complexity: O(n^2)
 space complexity:
 
 class Solution:
@@ -39,3 +39,9 @@ class Solution:
                         output = [j, i]
                     return output
         return False
+
+
+
+
+
+
