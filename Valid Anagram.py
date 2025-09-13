@@ -1,4 +1,4 @@
-Q) 
+"""Q) 
 Valid Anagram
 Solved 
 Given two strings s and t, return true if the two strings are anagrams of each other, otherwise return false.
@@ -18,19 +18,14 @@ Output: false
 Constraints:
 
 s and t consist of lowercase English letters.
+"""
 
 
-
-
-
-
-
-
-
-1st approach:
-
+"""1st approach:
+Brute Force method
 Time Complexity = O(n log n)
-Space Complexity = O(n)
+Space Complexity = O(n)"""
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
