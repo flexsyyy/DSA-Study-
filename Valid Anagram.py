@@ -42,3 +42,37 @@ class Solution:
             return True
         else:
             return False
+
+"""2nd approach:
+Hashmap method
+Time Complexity = O(n)
+Space Complexity = O(K) ~ O(1)"""
+
+
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        slen = len(s)
+        tlen = len(t)
+        dicts = {}
+        dictt = {}
+        if(slen == tlen):
+            for ch in s:
+                if ch in dicts:
+                    dicts[ch]+=1
+                else:
+                    dicts[ch] = 1
+            for ch in t:
+                if ch in dictt:
+                    dictt[ch]+=1
+                else:
+                    dictt[ch] = 1
+
+            for ch in s:
+                if(dicts.get(ch,0)!=dictt.get(ch,0)):
+                    return False
+            return True
+        
+                
+        else:
+            return False
