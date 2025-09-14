@@ -37,6 +37,9 @@ class Solution:
 
         return list(groups.values())
 
+"""Approach 2:
+using frequency of letters and then using hashmap to create sublists"""
+
 
 
 
